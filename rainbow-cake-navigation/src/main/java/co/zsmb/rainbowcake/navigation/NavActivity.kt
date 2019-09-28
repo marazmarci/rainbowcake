@@ -17,8 +17,7 @@ abstract class NavActivity<VS : Any, VM : RainbowCakeViewModel<VS>> : RainbowCak
     /**
      * The Navigator that subclasses can access to perform navigation actions.
      */
-    val navigator: ExtendedNavigator
-        get() = navigatorImpl
+    var navigator: ExtendedNavigator = navigatorImpl
 
     /**
      * Private implementation of the Navigator interface with a more concrete
